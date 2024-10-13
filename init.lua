@@ -10,3 +10,5 @@ require("lsp")
 require("lsp-lua")
 
 require("formatter")
+
+require("tree")
