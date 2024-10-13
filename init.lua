@@ -12,3 +12,4 @@ require("lsp-lua")
 require("formatter")
 
 require("tree")
+require("cfg-telescope")
