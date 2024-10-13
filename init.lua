@@ -3,13 +3,13 @@ require("keymaps")
 
 require("plugins-init")
 
-require("colorscheme")
+require("cfg-colorscheme")
 
-require("lsp-manager")
-require("lsp")
-require("lsp-lua")
+require("cfg-mason")
+require("cfg-lspconfig")
+require("cfg-lsp-lua")
 
-require("formatter")
+require("cfg-conform")
 
-require("tree")
+require("cfg-nvim-tree")
 require("cfg-telescope")
