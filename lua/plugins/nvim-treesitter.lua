@@ -10,6 +10,7 @@ return {
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
+          "gcc",
           "css",
           "html",
           "javascript",
