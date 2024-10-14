@@ -2,11 +2,13 @@ return {
   {
     "rmagatti/alternate-toggler",
     config = function()
-      alternates = {
-        ["==="] = "!==",
-        ["=="] = "!=",
-        ["error"] = "warn",
-      }
+      require("alternate-toggler").setup({
+        alternates = {
+          ["==="] = "!==",
+          ["=="] = "!=",
+          ["error"] = "warn",
+        },
+      })
 
       vim.keymap.set("n", "<leader>i", "<cmd>ToggleAlternate<cr>")
     end,
