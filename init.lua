@@ -13,3 +13,5 @@ require("cfg-lspconfig")
 require("cfg-lsp-lua")
 
 require("cfg-conform")
+
+require("cfg-bookmarks")
