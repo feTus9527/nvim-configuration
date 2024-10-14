@@ -1,30 +1,30 @@
-local _opt = vim.opt
+local opt = vim.opt
 
-_opt.number = true
-_opt.relativenumber = true
+opt.number = true
+opt.relativenumber = true
 
-_opt.tabstop = 2
-_opt.shiftwidth = 2
-_opt.expandtab = true
-_opt.autoindent = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
+opt.cursorline = true
 
-_opt.cursorline = true
-_opt.termguicolors = true
+opt.termguicolors = true
+opt.scrolloff = 5
+opt.sidescrolloff = 5
 
-_opt.scrolloff = 5
-_opt.sidescrolloff = 5
+opt.hlsearch = true
+opt.incsearch = true
 
-_opt.hlsearch = true
-_opt.incsearch = true
+opt.ignorecase = true
+opt.smartcase = true
 
-_opt.ignorecase = true
-_opt.smartcase = true
+opt.mouse:append("a")
+opt.clipboard:append("unnamedplus")
 
-_opt.mouse:append("a")
-_opt.clipboard:append("unnamedplus")
+opt.swapfile = false
 
-_opt.swapfile = false
-_opt.autoread = true
+opt.autoread = true
 vim.bo.autoread = true
 
 -- hightlight copied text
@@ -34,5 +34,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
       higroup = "IncSearch",
       timeout = 300,
     })
-  end
+  end,
 })

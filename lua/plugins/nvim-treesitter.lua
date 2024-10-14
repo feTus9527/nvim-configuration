@@ -5,15 +5,15 @@ return {
     build = ":TSUpdate",
     dependencies = {
       "windwp/nvim-ts-autotag",
-      "axelvc/template-string.nvim"
+      "axelvc/template-string.nvim",
     },
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "lua",
-          "vim"
-        }
+          "vim",
+        },
       })
-    end
-  }
+    end,
+  },
 }
