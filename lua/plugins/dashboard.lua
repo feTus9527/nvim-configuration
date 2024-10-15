@@ -4,8 +4,8 @@ return {
     event = "VimEnter",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      local p = vim.fn.getcwd()
-      local banner_path = p .. "/AppData/Local/nvim/banner.txt"
+      local p = vim.fn.stdpath("config")
+      local banner_path = p .. "/banner.txt"
 
       local banner = {}
       local file = io.open(banner_path, "r")
@@ -27,4 +27,3 @@ return {
     end,
   },
 }
-
