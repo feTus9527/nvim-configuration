@@ -32,14 +32,14 @@ return {
           custom = { "^.git$" },
         },
         actions = {
-          open_file = { quit_on_open = false },
+          open_file = { quit_on_open = true },
         },
         update_focused_file = {
           enable = true,
           update_cwd = true,
         },
         git = {
-          enable = false,
+          enable = true,
         },
         diagnostics = {
           enable = true,

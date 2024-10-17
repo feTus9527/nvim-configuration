@@ -39,6 +39,7 @@ return {
         layout_config = {
           horizontal = { preview_cutoff = 100, preview_width = 0.5 },
         },
+        extensions = {},
       })
     end,
   },
